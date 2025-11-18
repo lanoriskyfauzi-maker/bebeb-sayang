@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hamster Memories</title>
+  <!-- Pastikan path ini benar ke file CSS kamu -->
+  <link rel="stylesheet" href="foto.css" />
+  <!-- Jika kamu ingin font khusus, tambahkan di sini -->
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- tombol musik -->
+  <button id="playMusic" class="music-btn" aria-label="Putar Musik">🎵</button>
+  <!-- Perhatikan path ke lagu -->
+  <audio id="bgMusic" src="../assets/lagu lili 2.mp3" type="audio/mpeg" preload="auto"></audio>
+
+  <!-- hamster wheel -->
+  <section class="scene">
+    <div class="wrapper">
+      <div class="wheel-frame pix">
+        <div class="wheel">
+          <div class="wheel-support pix"></div>
+          <div class="hamster puff pix">
+            <div class="ear pix"></div>
+            <div class="head puff pix"></div>
+            <div class="bum puff pix"></div>
+          </div>
+        </div>
+      </div>
+      <input type="range" name="speed" min="0" max="11" value="3">
+    </div>
+  </section>
+
+  <!-- Container untuk foto yang muncul -->
+    <!-- Container untuk foto yang muncul -->
+  <div class="photo-container">
+    <div class="photo-item">
+        <img src="../assets/kita.jpg" class="photo-img">
+
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili9.jpeg" class="photo-img">
+
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili1.jpeg" class="photo-img">
+  
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili2.jpeg" class="photo-img">
+  
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili4.jpeg" class="photo-img">
+  
+    </div>
+    <!-- Foto baru -->
+    <div class="photo-item">
+        <img src="../assets/lili5.jpeg" class="photo-img">
+  
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili6.jpeg" class="photo-img">
+  
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili8.jpeg" class="photo-img">
+  
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili7.jpeg" class="photo-img">
+  
+    </div>
+    <div class="photo-item">
+        <img src="../assets/lili3.jpeg" class="photo-img">
+  
+    </div>
+  </div>
+
+  <!-- container buat bunga jatuh -->
+  <div class="flowers" id="flowers"></div>
+
+  <script src="foto.js"></script>
+</body>
+</html>
