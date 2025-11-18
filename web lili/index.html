@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Kamu 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">💖</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="foto.html">Foto Kenangan</a></li>
+      <li><a href="bunga.html">Bunga</a></li>
+      <li><a href="card.html">Kartu Cinta</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Hai <span class="highlight">Bibih</span>
+      </h1>
+      <p class="hero-subtitle">
+        Ini buat kamu loh, karena kamu bibih akuch 😘<br>
+        Semoga kamu suka dengan semua yang aku buatin spesial buat kamu.<br> kamu bisa pencet tombol apapun asalkan jangan tombol power😒
+      </p>
+      <div class="cta-buttons">
+        <a href="ultah.html" class="btn btn-primary">Let's play bibih 💋</a>
+      </div>
+    </div>
+
+    <div class="hero-illustration">
+      <div class="illustration-container">
+        <img src="../assets/index.jpg" class="single-foto">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
