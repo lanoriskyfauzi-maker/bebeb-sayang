@@ -323,35 +323,35 @@ function startPhotoShow() {
     const photos = [
         {
             text: 'Our First Date 💕',
-            image: '/assets/photo4.jpeg'
+            image: 'assets/photo4.jpeg'
         },
         {
             text: 'Birthday Moment 🎂',
-            image: '/assets/ultah lili.jpeg'
+            image: 'assets/ultah lili.jpeg'
         },
         {
             text: 'Adventure Time 🌟',
-            image: '/assets/photo1.jpeg'
+            image: 'assets/photo1.jpeg'
         },
         {
             text: 'Cozy Together ❤️',
-            image: '/assets/photo2.jpeg'
+            image: 'assets/photo2.jpeg'
         },
         {
             text: 'Sweet Memories 🥰',
-            image: '/assets/photo3.jpeg'
+            image: 'assets/photo3.jpeg'
         },
         {
             text: 'Laugh Together 😂',
-            image: '/assets/photo5.jpg'
+            image: 'assets/photo5.jpg'
         },
         {
             text: 'Perfect Day ☀️',
-            image: '/assets/photo6.jpg'
+            image: 'assets/photo6.jpg'
         },
         {
             text: 'Love Forever 💖',
-            image: '/assets/photo7.jpg'
+            image: 'assets/photo7.jpg'
         }
     ];
     
@@ -1192,3 +1192,4 @@ function handleContinueNavigation() {
     }
 
 }
+
