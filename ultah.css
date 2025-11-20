@@ -1300,4 +1300,20 @@ body {
 
 .birthday-title {
     animation: glow 2s ease-in-out infinite;
+
+}
+/* TOMBOL KEMBALI */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 99999;
+  backdrop-filter: blur(4px);
+  transition: 0.2s;
 }
