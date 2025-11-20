@@ -1300,8 +1300,8 @@ body {
 
 .birthday-title {
     animation: glow 2s ease-in-out infinite;
-
 }
+
 /* TOMBOL KEMBALI */
 .kembali-btn {
   position: fixed;
@@ -1317,4 +1317,3 @@ body {
   backdrop-filter: blur(4px);
   transition: 0.2s;
 }
-
