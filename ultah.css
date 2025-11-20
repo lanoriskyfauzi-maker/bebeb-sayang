@@ -1303,7 +1303,7 @@ body {
 
 }
 /* TOMBOL KEMBALI */
-.back-btn {
+.kembali-btn {
   position: fixed;
   top: 20px;
   left: 20px;
@@ -1317,3 +1317,4 @@ body {
   backdrop-filter: blur(4px);
   transition: 0.2s;
 }
+
