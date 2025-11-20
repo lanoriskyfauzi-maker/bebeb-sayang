@@ -206,6 +206,129 @@ body {
       }
     }
 
+    /* TOMBOL KEMBALI */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 99999;
+  backdrop-filter: blur(4px);
+  transition: 0.2s;
+}
+
+/* ===========================
+    📱  HP (max-width: 480px)
+   =========================== */
+@media (max-width: 480px) {
+
+  .card {
+    width: 230px;
+    height: 330px;
+    transform: translate(-50%, -50%) perspective(1500px);
+  }
+
+  .card:hover {
+    transform: translate(-50%, -50%) perspective(1500px) rotate(12deg) scale(1.1);
+  }
+
+  .card .details {
+    margin-top: 50px;
+  }
+
+  .card .details p {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .card .details h4 {
+    font-size: 20px;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Tombol kembali bawaan <button> */
+  button {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
+
+
+/* ===========================
+      🟧  TABLET (481–768px)
+   =========================== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .card {
+    width: 280px;
+    height: 380px;
+    transform: translate(-50%, -50%) perspective(1800px);
+  }
+
+  .card:hover {
+    transform: translate(-50%, -50%) perspective(1800px) rotate(14deg) scale(1.15);
+  }
+
+  .card .details {
+    margin-top: 60px;
+  }
+
+  .card .details p {
+    font-size: 13px;
+    line-height: 11px;
+  }
+
+  .card .details h4 {
+    font-size: 24px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* ===========================
+      💻  LAPTOP / PC (≥ 769px)
+   =========================== */
+@media (min-width: 769px) {
+
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+
+  .card:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+  }
+
+  .card .details p {
+    font-size: 14px;
+  }
+
+  .back-btn {
+    font-size: 18px;
+  }
+}
+
+
 
 
 
