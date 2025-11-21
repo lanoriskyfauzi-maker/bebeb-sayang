@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cake = document.querySelector(".cake");
   const candleCountDisplay = document.getElementById("candleCount");
   let candles = [];
-  let audio = new Audio('../assets/puki.mp3');
+  let audio = new Audio('assets/puki.mp3');
 
   // === Update Jumlah Lilin ===
   function updateCandleCount() {
@@ -83,3 +83,4 @@ function endlessConfetti() {
     });
   }, 1000);
 }
+
